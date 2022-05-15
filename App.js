@@ -54,7 +54,7 @@ export default function App() {
         <Stack.Screen  name="Reminder" component={Reminder} />
         <Stack.Screen name= "Todo" component={Todo}/>
         <Stack.Screen name= "Intro" component={Intro}/>
-        <Stack.Screen  name="ClockPage" component={ClockPage} />
+        <Stack.Screen name="ClockPage" component={ClockPage} />
         <Stack.Screen component={NoteProvider} name='NoteProvider' />
         <Stack.Screen name= "NoteScreen" component={NoteScreen}/>
         <Stack.Screen component={NoteDetail} name='NoteDetail' />

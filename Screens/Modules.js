@@ -18,47 +18,47 @@ const Login = () => {
     <View style={styles.container}>
       <Image
         style={styles.image}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/log2.jpg")}
+        source={require("../assets/log2.jpg")}
       />
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Intro')}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#FFAAA5'}]} onPress={()=>navigation.navigate('Intro')}>
           <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/Notes.jpeg")}/>
+        source={require("../assets/Notes.jpeg")}/>
           <Text style={styles.buttonText}>Notes</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('ClockPage')}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#808080'}]} onPress={()=>navigation.navigate('ClockPage')}>
         <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/Notes.jpeg")}/>
+        source={require("../assets/clock.png")}/>
           <Text style={styles.buttonText}>Clock</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={()=>navigation.navigate('Todo')}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#EBAF8A'}]} onPress={()=>navigation.navigate('Todo')}>
         <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/Todo.jpeg")}/>
+        source={require("../assets/Todo.jpeg")}/>
           <Text style={styles.buttonText}>To- Do</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#7ADECD'}]}>
         <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/Music.png")}/>
+        source={require("../assets/Music.png")}/>
           <Text style={styles.buttonText}>Music</Text>
         </TouchableOpacity>
       </View>
 
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#FE83C6'}]}>
         <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/SelfCare.png")}/>
+        source={require("../assets/SelfCare.png")}/>
         <Text style={styles.buttonText}>Self Care</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={[styles.button,{ backgroundColor: '#A6C1E5'}]}>
         <Image style={styles.image2}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/Reminder.jpeg")}/>
+        source={require("../assets/Reminder.jpeg")}/>
           <Text style={styles.buttonText}  onPress={()=>navigation.navigate('Reminder')}>Reminder</Text>
         </TouchableOpacity>
       </View>
@@ -82,8 +82,8 @@ const styles = StyleSheet.create({
   },
 
   image2: {
-    width: 60,
-    height: 60,
+    width: 70,
+    height: 70,
     marginBottom: 10,
   },
 
@@ -102,7 +102,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: "black",
-    fontSize: 10,
+    fontSize: 15,
     textAlign: "center",
   },
 });

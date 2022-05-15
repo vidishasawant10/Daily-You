@@ -20,7 +20,7 @@ const Home = () => {
         <View style={styles.container}>
             
             {/* <Text>This is a Login Screen</Text> */}
-            <Image style={styles.image} source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/log2.jpg")} />
+            <Image style={styles.image} source={require("../assets/log2.jpg")} />
 
             <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate('Signup')}>
                 <Text>SIGN UP</Text>

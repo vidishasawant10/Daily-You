@@ -18,7 +18,7 @@ const Login = () => {
     <View style={styles.container}>
       <Image
         style={styles.image}
-        source={require("/Users/sayalitandel/Downloads/DailyYouBase-Updated-Vidhi 2/assets/log2.jpg")}
+        source={require("../assets/log2.jpg")}
       />
 
       <StatusBar style="auto" />
