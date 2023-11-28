@@ -25,7 +25,7 @@ const Login = () => {
       <View style={styles.inputView}>
         <TextInput
           style={styles.TextInput}
-          placeholder="Email"
+          placeholder="Email ID"
           placeholderTextColor="#003f5c"
           onChangeText={(email) => setEmail(email)}
         />
@@ -41,13 +41,13 @@ const Login = () => {
         />
       </View>
 
+      <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate('Modules')}>
+        <Text style={styles.buttonText}>LOGIN</Text>
+      </TouchableOpacity>
       <TouchableOpacity>
         <Text style={styles.forgot_button}>Forgot Password?</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate('Modules')}>
-        <Text style={styles.loginText}>LOGIN</Text>
-      </TouchableOpacity>
     </View>
   );
 };
@@ -56,32 +56,35 @@ export default Login;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2e9e4",
     alignItems: "center",
     justifyContent: "center",
   },
 
   image: {
-    width: 280,
-    height: 280,
+    width: 320,
+    height: 320,
     marginBottom: 40,
+    borderRadius: 160, 
+    overflow: 'hidden',
   },
 
   inputView: {
-    backgroundColor: "#8BE3E3",
-    borderRadius: 30,
+    backgroundColor: "#f2e9e4",
+    borderRadius: 10,
     width: "70%",
     height: 45,
     marginBottom: 20,
-
     alignItems: "center",
-  },
+    borderBottomWidth: 2,
+    borderColor: "#2E3B4E",
 
+  },
   TextInput: {
-    height: 50,
+    height: 10,
     flex: 1,
-    padding: 10,
-    marginLeft: 20,
+    alignItems: "center",
+    justifyContent: "center"
   },
 
   loginBtn: {
@@ -90,7 +93,14 @@ const styles = StyleSheet.create({
     height: 50,
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 40,
-    backgroundColor: "#8BE3E3",
+    marginTop: 10,
+    backgroundColor: "#4A4E69",
+  },
+  buttonText: {
+    color: "#fff", 
+  },
+  forgot_button: {
+    marginTop: 12,
+    color: "#000", 
   },
 });

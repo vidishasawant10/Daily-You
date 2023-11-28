@@ -23,11 +23,11 @@ const Home = () => {
             <Image style={styles.image} source={require("../assets/log2.jpg")} />
 
             <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate('Signup')}>
-                <Text>SIGN UP</Text>
+                <Text style={styles.buttonText}>SIGN UP</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.loginBtn} onPress={()=>navigation.navigate('Login')}>
-                <Text>LOGIN</Text>
+                <Text style={styles.buttonText}>LOGIN</Text>
             </TouchableOpacity>
         </View>
     )
@@ -37,7 +37,7 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f2e9e4",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -46,6 +46,8 @@ const styles = StyleSheet.create({
     width: 320,
     height: 320,
     marginBottom: 40,
+    borderRadius: 160, // Half of the width/height to make it a circle
+    overflow: 'hidden',
   },
  
   inputView: {
@@ -54,7 +56,6 @@ const styles = StyleSheet.create({
     width: "70%",
     height: 45,
     marginBottom: 20,
- 
     alignItems: "center",
   },
  
@@ -78,6 +79,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     marginTop: 40,
-    backgroundColor: "#8BE3E3",
+    backgroundColor: "#4A4E69",
+  },
+  buttonText: {
+    color: "#fff", // Set your desired text color here
   },
 });
